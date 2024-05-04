@@ -56,20 +56,12 @@ dataset_list = ["BLCA","CESC","CHOL","COAD","ESCA","GBM","HNSC","KICH","KIRC","K
 
 ######################################################################################
 #-------------------------------------------------------------------------------------------------------%
-# Algorithm: Nuclear Reaction Processes (ImprovedBinaryNRO)
 
-# algo_dicts = {"RBNRO-DE": ImprovedBinaryNRO ,"BSSA": BinarySSA, "BABC": BinaryABC, "BPSO": BinaryPSO, "BBA": BinaryBA, "BGWO": BinaryGWO, "BWOA": BinaryWOA, "BGOA": BinaryGOA,
-#                 "BSFO": BinarySFO, "BHHO": BinaryHHO, "BBSA": BinaryBSA, "BASO": BinaryASO, "BHGSO": BinaryHGSO}
-algo_dicts = {"RBAVO-DE": ImprovedBinaryAVO}
-######################################################################################
-# Recent Algorithms
-# algo_dicts = {"RBNRO-DE": ImprovedBinaryNRO, "BMOA": BinaryMOA, "BBBO": BinaryBBO, "BAO": BinaryAO, "BAVO": BinaryAVO} 
 
+ algo_dicts = {"RBAVO-DE": ImprovedBinaryAVO ,"BSSA": BinarySSA, "BABC": BinaryABC, "BPSO": BinaryPSO, "BBA": BinaryBA, "BGWO": BinaryGWO, "BWOA": BinaryWOA, "BGOA": BinaryGOA,
+                 "BSFO": BinarySFO, "BHHO": BinaryHHO, "BBSA": BinaryBSA, "BASO": BinaryASO, "BHGSO": BinaryHGSO}
+# algo_dicts = {"RBAVO-DE": ImprovedBinaryAVO}
 ######################################################################################
-# Hybrid Algorithms with RF and DE
-# algo_dicts = {"RBNRO-DE": ImprovedBinaryNRO, "RBMOA-DE": ImprovedBinaryMOA, "RBBBO-DE": ImprovedBinaryBBO, "RBAO-DE": ImprovedBinaryAO, "RBAVO-DE": ImprovedBinaryAVO, "RBSSA-DE": ImprovedBinarySSA,
-#               "RBSFO-DE": ImprovedBinarySFO, "RBHHO-DE": ImprovedBinaryHHO, "RBASO-DE": ImprovedBinaryASO, "RBHGSO-DE": ImprovedBinaryHGSO, "RBBA-DE": ImprovedBinaryBA} 
-#-------------------------------------------------------------------------------------------------------%
 ######################################################################################
 
 obj_fun_dicts = {"ML": [KNN, SVM]}
@@ -104,7 +96,7 @@ pop_size = 10
 lsa_epoch = 20
 param_result_path = getcwd() + "/Final_BNRO/Final_BNRO_result.doc"
 
-# feat_combination= [500, 1000, 2000, 3000, 5000, 6000, 7000, 9000, 11000, 15000, 16000, 17000]
+
 feat_combination = 500
 ######################################################################################
 ######################################################################################
